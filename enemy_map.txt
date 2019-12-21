@@ -1,0 +1,110 @@
+# helms
+1	https://finalfantasy.fandom.com/wiki/Raldo_(Final_Fantasy_X)
+2	https://finalfantasy.fandom.com/wiki/Bunyip
+3	https://finalfantasy.fandom.com/wiki/Murussu_(Final_Fantasy_X)
+4	https://finalfantasy.fandom.com/wiki/Mafdet
+5	https://finalfantasy.fandom.com/wiki/Shred_(Final_Fantasy_X)
+# imps
+6	https://finalfantasy.fandom.com/wiki/Gandarewa_(Final_Fantasy_X)
+7	https://finalfantasy.fandom.com/wiki/Aerouge
+8	https://finalfantasy.fandom.com/wiki/Imp_(Final_Fantasy_X)
+# lupine
+9	https://finalfantasy.fandom.com/wiki/Dingo
+10	https://finalfantasy.fandom.com/wiki/Mi%27ihen_Fang
+11	https://finalfantasy.fandom.com/wiki/Garm_(Final_Fantasy_X)
+12	https://finalfantasy.fandom.com/wiki/Snow_Wolf_(Final_Fantasy_X)
+13	https://finalfantasy.fandom.com/wiki/Sand_Wolf
+14	https://finalfantasy.fandom.com/wiki/Skoll_(Final_Fantasy_X)
+15	https://finalfantasy.fandom.com/wiki/Bandersnatch_(Final_Fantasy_X)
+# flan
+16	https://finalfantasy.fandom.com/wiki/Water_Flan_(Final_Fantasy_X)
+17	https://finalfantasy.fandom.com/wiki/Thunder_Flan_(Final_Fantasy_X)
+18	https://finalfantasy.fandom.com/wiki/Snow_Flan_(Final_Fantasy_X)
+19	https://finalfantasy.fandom.com/wiki/Ice_Flan_(Final_Fantasy_X)
+20	https://finalfantasy.fandom.com/wiki/Flame_Flan_(Final_Fantasy_X)
+21	https://finalfantasy.fandom.com/wiki/Dark_Flan_(Final_Fantasy_X)
+# reptile
+22	https://finalfantasy.fandom.com/wiki/Dinonix_(Final_Fantasy_X)
+23	https://finalfantasy.fandom.com/wiki/Ipiria
+24	https://finalfantasy.fandom.com/wiki/Raptor_(Final_Fantasy_X)
+25	https://finalfantasy.fandom.com/wiki/Melusine_(Final_Fantasy_X)
+26	https://finalfantasy.fandom.com/wiki/Iguion_(Final_Fantasy_X)
+27	https://finalfantasy.fandom.com/wiki/Yowie_(Final_Fantasy_X)
+# bird
+28	https://finalfantasy.fandom.com/wiki/Condor_(Final_Fantasy_X)
+29	https://finalfantasy.fandom.com/wiki/Simurgh_(Final_Fantasy_X)
+30	https://finalfantasy.fandom.com/wiki/Alcyone
+# wasp
+31	https://finalfantasy.fandom.com/wiki/Killer_Bee_(Final_Fantasy_X)
+32	https://finalfantasy.fandom.com/wiki/Bite_Bug_(Final_Fantasy_X)
+33	https://finalfantasy.fandom.com/wiki/Wasp_(Final_Fantasy_X)
+34	https://finalfantasy.fandom.com/wiki/Nebiros_(Final_Fantasy_X)
+# evil-eye
+35	https://finalfantasy.fandom.com/wiki/Floating_Eye_(Final_Fantasy_X)
+36	https://finalfantasy.fandom.com/wiki/Buer_(Final_Fantasy_X)
+37	https://finalfantasy.fandom.com/wiki/Evil_Eye_(Final_Fantasy_X)
+38	https://finalfantasy.fandom.com/wiki/Ahriman_(Final_Fantasy_X)
+# plant
+39	https://finalfantasy.fandom.com/wiki/Ragora
+40	https://finalfantasy.fandom.com/wiki/Grat_(Final_Fantasy_X)
+# sahagin [baaj-temple, via-purifico-underwater, via-purifico-land]
+41	https://finalfantasy.fandom.com/wiki/Sahagin_(Final_Fantasy_X)
+42	https://finalfantasy.fandom.com/wiki/Sahagin_(Final_Fantasy_X)
+43	https://finalfantasy.fandom.com/wiki/Sahagin_(Final_Fantasy_X)
+# 
+# TODO
+#
+# drake
+59	https://finalfantasy.fandom.com/wiki/Vouivre_(Final_Fantasy_X)
+60	https://finalfantasy.fandom.com/wiki/Lamashtu_(Final_Fantasy_X)
+61	https://finalfantasy.fandom.com/wiki/Kusariqqu
+62	https://finalfantasy.fandom.com/wiki/Mushussu_(Final_Fantasy_X)
+63	https://finalfantasy.fandom.com/wiki/Nidhogg_(Final_Fantasy_X)
+# 
+# TODO
+#
+# TODO 77 to 83 are some element components, todo join them
+#
+# sinscale [?, ?]
+107	https://finalfantasy.fandom.com/wiki/Sinscale
+108 https://finalfantasy.fandom.com/wiki/Sinscale
+# 
+# TODO
+#
+# bomb
+193	https://finalfantasy.fandom.com/wiki/Bomb_(Final_Fantasy_X)
+194	https://finalfantasy.fandom.com/wiki/Grenade_(Final_Fantasy_X_enemy)
+# 
+# TODO
+#
+# fungus
+214	https://finalfantasy.fandom.com/wiki/Funguar_(Final_Fantasy_X)
+215	https://finalfantasy.fandom.com/wiki/Thorn_(Final_Fantasy_X)
+216	https://finalfantasy.fandom.com/wiki/Sleep_Sprout
+# 
+# TODO
+#
+# ruminant
+228	https://finalfantasy.fandom.com/wiki/Dual_Horn_(Final_Fantasy_X)
+#
+# SPECIALS FROM NOW ON
+# 
+# https://finalfantasy.fandom.com/wiki/Bomb_King_(Final_Fantasy_X)
+# https://finalfantasy.fandom.com/wiki/Sandragora
+# https://finalfantasy.fandom.com/wiki/One-Eye
+# https://finalfantasy.fandom.com/wiki/Juggernaut_(Final_Fantasy_X)
+# https://finalfantasy.fandom.com/wiki/Exoray_(Final_Fantasy_X)
+# https://finalfantasy.fandom.com/wiki/Fafnir_(Final_Fantasy_X)
+# https://finalfantasy.fandom.com/wiki/Bat_Eye_(Final_Fantasy_X)
+# https://finalfantasy.fandom.com/wiki/Floating_Death_(Final_Fantasy_X)
+# https://finalfantasy.fandom.com/wiki/Hornet_(Final_Fantasy_X)
+# https://finalfantasy.fandom.com/wiki/Pteryx_(Final_Fantasy_X)
+# https://finalfantasy.fandom.com/wiki/Cave_Iguion
+# https://finalfantasy.fandom.com/wiki/Ornitholestes
+# https://finalfantasy.fandom.com/wiki/Zaurus
+# https://finalfantasy.fandom.com/wiki/Aqua_Flan_(Final_Fantasy_X)
+# https://finalfantasy.fandom.com/wiki/Jumbo_Flan_(Final_Fantasy_X)
+# https://finalfantasy.fandom.com/wiki/Fenrir_(Final_Fantasy_X)
+# https://finalfantasy.fandom.com/wiki/Vidatu
+# https://finalfantasy.fandom.com/wiki/Halma
+# https://finalfantasy.fandom.com/wiki/Tanket
