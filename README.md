@@ -120,6 +120,34 @@ Good starting tutorial https://www.youtube.com/watch?v=rHzf3Dku_cE.
 
 Good reference script https://blender.stackexchange.com/questions/39303/blender-script-import-model-and-render-it
 
-However, I still got stuck (but only for a day now, since I finally understood a little blender). I posted a question on https://blender.stackexchange.com/questions/161219/apply-texture-to-a-model-via-blender-script this time. However, I was able to solve it myself:
+However, I still got stuck (but only for a day now, since I finally understood a little blender). I posted a question on https://blender.stackexchange.com/questions/161219/apply-texture-to-a-model-via-blender-script this time. However, I was able to solve it myself - See the `load_model` function in `blender_renderer.py`.
 
-Add again two days later my little project got complex enough to put it up on github.
+Now there was no stopping me, and with small hiccups, we progressed pretty well. Since this baby got more and more complex, I put it up on github.
+
+Sidenote: Please don't judge me at the horrible way the blender script is written (I'm a 3d graphics noob) - Help me if you can.
+
+### A quick digression 
+
+At this point I was able to generate 2624 images (about 375 MiB), and upon manual inspection they mostly looked ok. A point to mention here is that I was very glad I multithreaded the render code (badly done, but still ...) . The execution took about 19 execution minutes whereas real execution was only 2 and half minutes.
+
+At this point I went and did a lot of things:
+
+1. I tried collecting background images which would help generate more cases. I tried to do this in a reproducible manner by getting permalinks of free images and downloading them via script. However I realised that even free image sites don't give permalinks (Booooo!!!). So after wasting a solid two hours I moved on.
+
+2. I also realised that in order to get all the image dimensions, perspective, etc right, I had to revisit the game. So I did and took multiple screenshots of the different maps, enemies etc.
+
+3. I got a bit greedy at this point and already started modelling the images I collected - And whoaa 62% accuracy on the training set. This excitement was shortlived as the test accuracy was 0%. The test was bad since there was one completely black monster and it just detected the black areas in the background. The training accuracy could be improved a lot also:
+    * Visually I could not tell the monster from certain pictures. So how can the ML work if human accuracy is low. This mainly happened because front or side perspectives on certain monsters didn't show anythin (the monster was flat).
+    * Several monsters I went throught looked exactly like one another (not just shape, colour also).
+    * The front and rear perspectives looked very different for the same monster.
+
+So I had a lot of work ahead of me:
+
+* Manually collect background image (will make it script later)
+* Manually figure out game box sizes for monsters, cursors, characters etc. Also analyse variances in these.
+* Automatically generate valid perspective of monsters.
+* Manually map monster classes.
+* Automatically double monster classes by seggregating into front and behind.
+* Optionally - When mapping monster classes link them to a site which can be scraped for information.
+
+A lot of manual work ahead :( T_T.

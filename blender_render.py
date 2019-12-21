@@ -114,6 +114,9 @@ def run(idx):
     out_name = sys.stdin.readline().rstrip('\n')
     obj_path = sys.stdin.readline().rstrip('\n')
     tex_path = sys.stdin.readline().rstrip('\n')
+    img_path = sys.stdin.readline().rstrip('\n')
+    out_path = sys.stdin.readline().rstrip('\n')
+
 
     print('INFO: Loading models')
     remove_obj_and_mesh(bpy.context)
@@ -121,12 +124,15 @@ def run(idx):
     gen_scale = max(xobj.dimensions) / 14.5
 
     print('INFO: Loading backgrounds')
-    add_bg_image('/TODO_dynamic_path/bg-i.png')
-    add_floor_image('/TODO_dynamic_path/fl-i.png', 10+xobj.dimensions[2]/2)
+    add_bg_image(img_path + '-bg.png')
+    add_floor_image(img_path + '-fl.png', 10+xobj.dimensions[2]/2)
 
     print('INFO: Rendering scenes')
-    setup_scene(xobj, bpy.data.scenes[0], 30.0 + 10*gen_scale, front_angle=0)
-    render_scene(bpy.data.scenes[0], '/TODO_dynamic_path/render-{}.png'.format(out_name))
+    fa = [0, 45, 90, 135, 180, -135, -90, -45]
+    for i in range(len(fa)):
+        setup_scene(xobj, bpy.data.scenes[0], 30.0 + 10*gen_scale, front_angle=fa[i])
+        render_scene(bpy.data.scenes[0], out_path + '/{}-{}.png'.format(out_name, i))
+    print('INFO: Rendering scenes')
 
 
 run(0)

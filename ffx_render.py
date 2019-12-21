@@ -35,24 +35,29 @@ def model_extract(model_data):
     return tmp_dir
 
 
-def render_job(model_name, obj_path, texture_path):    
-    instr ='\n'.join([model_name, obj_path, texture_path]).encode()
+def render_job(model_name, obj_path, texture_path, bg_path, dist_path):
+    instr ='\n'.join([model_name, obj_path, texture_path, bg_path, dist_path]).encode()
     out = subprocess.check_output("blender --background --python blender_render.py", stderr=subprocess.STDOUT, input=instr, shell=True)
     logging.info('Blender out=' + str(out))
+    #print(out.decode('utf-8'))
 
 if __name__ == '__main__':
     # get available models
     chr_path = '/media/rishin/20ACFF83ACFF5230/Users/rishin/Desktop/ffxx/ffx_data/gamedata/ps3data/chr'
+    bg_path = '/home/rishin/workspace/ffx-ai/assets/temp'
+    dist_path = '/home/rishin/workspace/ffx-ai/dist'
+    #
     model_data = model_gather(chr_path, ['mon'])
     # extract models in a tmp dir
     tmp_dir = model_extract(model_data)
     # render models
-    tp = ThreadPool(6)
+    tp = ThreadPool(12)
     for model in model_data:
         obj_path = os.path.join(tmp_dir, model['name'] + '.obj')
         texture_path = os.path.join(tmp_dir, model['name'] + '.dds')
         # run subprocess
-        tp.apply_async(render_job, (model['name'], obj_path, texture_path))
+        tp.apply_async(render_job, (model['name'], obj_path, texture_path, bg_path, dist_path))
+        
     tp.close()
     tp.join()
     # cleanup
