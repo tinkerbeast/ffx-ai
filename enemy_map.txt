@@ -67,7 +67,7 @@
 #
 # sinscale [?, ?]
 107	https://finalfantasy.fandom.com/wiki/Sinscale
-108 https://finalfantasy.fandom.com/wiki/Sinscale
+108	https://finalfantasy.fandom.com/wiki/Sinscale
 # 
 # TODO
 #

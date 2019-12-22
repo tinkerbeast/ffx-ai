@@ -116,6 +116,7 @@ def run(idx):
     tex_path = sys.stdin.readline().rstrip('\n')
     img_path = sys.stdin.readline().rstrip('\n')
     out_path = sys.stdin.readline().rstrip('\n')
+    angle = int(sys.stdin.readline().rstrip('\n'))
 
 
     print('INFO: Loading models')
@@ -128,10 +129,11 @@ def run(idx):
     add_floor_image(img_path + '-fl.png', 10+xobj.dimensions[2]/2)
 
     print('INFO: Rendering scenes')
-    fa = [0, 45, 90, 135, 180, -135, -90, -45]
+    #fa = [0, 45, 90, 135, 180, -135, -90, -45]
+    fa = [angle]
     for i in range(len(fa)):
         setup_scene(xobj, bpy.data.scenes[0], 30.0 + 10*gen_scale, front_angle=fa[i])
-        render_scene(bpy.data.scenes[0], out_path + '/{}-{}.png'.format(out_name, i))
+        render_scene(bpy.data.scenes[0], out_path)
     print('INFO: Rendering scenes')
 
 

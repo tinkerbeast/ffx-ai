@@ -150,4 +150,38 @@ So I had a lot of work ahead of me:
 * Automatically double monster classes by seggregating into front and behind.
 * Optionally - When mapping monster classes link them to a site which can be scraped for information.
 
+* Automatically add a background class.
+* Tightly cropped image
+
 A lot of manual work ahead :( T_T.
+
+
+### A change in work direction
+
+So I have been manually categorising enemy models. While so I learned that some of the models where in a very differnet shape than the way they appear in games. For example, the elements where broken down into pieces and not arranged. The wings on the sinscale was stuck together. The moustache on the coeurl or whatever it's name was pointed very long horizontally. And the horns on the ruminant type species were pointed. This made me despair - 3d model manipulation wasn't something I had intended on doing for this project. So I have decided to change the way I was working.
+
+Project managers would love the term I am going to use next - I am going lean, mean, agile. Instead of building that pefect monster model, I will focus on a minimu viable model and progess from there. The reason? Well after so many years in software engineering I have realised this project is going to be fairly unpredicatble. Rather than getting each phase perfect, making the whole thing together in a bad way and improving upon that would make sense. So my definition of done for the next two weeks?
+
+1. Map the following species of monsters to corrsponding graphic-models {helms imps lupine flan reptile bird wasp evil-eye plant sahagin drake sinscale bomb fungus ruminant}. Full mapping need not be done since models may have extras and some special species models are there. [DONE]
+2. Manually collect background images for rendering
+3. Based on 1 and 2, build a high accuracy (> 75%) ML-model.
+4. [Optional] Use the model for R-CNN predictions
+6. [Optional] Start work on YOLO with these data
+
+Note: The species mentioned in point 1 probably covers 80% of final fantasy battles (if not more). Elements would be the only problem. Also, the battles are dependent on the species type rather than the exact type (except for magic based enemies - but we will cross that bridge later).
+
+
+20160 images later
+------------------
+
+So I manually collected background images, and with the reduced set of classes I generated these images. I have to note down two dumb things I did:
+
+* I started passing the angle paramter to the blender script (this slowed down things tremendously since I am restarting a blender process every time I generate a single image).
+* I don't know why I thought I need to differentiate between front and rear view - The fully connected layer should absolutely take care of this.
+
+
+### A little bit of modelling
+
+Coming into step 3 of my DOD - This is necessary to get a sense if the amount of data is enough, what kind of hyperparamters I need to set, etc. To make a long story short, I initally tried with MobileNetv2, but that one seemed to overfit very early - Shouldn't really happen, but maybe a local optima? Though this was a high variance case, I didn't really have more data to add. So I went with local optima theory (even though it's fairly improbable) and tried a InceptionV3. This one gave decent results with 83% accuracy on the validation set. This also overfit the data after 4 epochs, but in between results were still acceptable. So I'll be moving on to YOLO. So, lots of model manipulation, bounding boxes etc again to do. But before that I have decided to add an extra task for this sprint (since step 1,2,3 happened fairly fast):
+
+* I will add the lead character models also.
